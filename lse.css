@@ -1,0 +1,66 @@
+/* demoFlexbox.css  */
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("fonts/Proxima\ Nova\ Font.otf") format("opentype");
+}
+
+body { 
+        margin:0;
+        font-family: 'Open Sans', sans-serif;        
+     }
+
+h1, h2 { font-family: 'Proxima Nova'; }
+
+
+#bigben1 {
+    width: 30%;
+}
+
+#bigben2 {
+    width: 30%;
+}
+
+#bigben3 {
+    width: 60%;
+}
+
+#programas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.programa {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 300px; /* Permite que os cartões se adaptem */
+    max-width: 30%; /* Limita a largura dos cartões */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.programa img {
+    width: 100%;
+    height: 200px; /* Define uma altura consistente */
+    object-fit: cover;
+}
+
+.programa div {
+    padding: 15px;
+}
+
+.programa h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.programa p {
+    font-size: 14px;
+    color: #666;
+}
